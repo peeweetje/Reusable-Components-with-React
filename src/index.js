@@ -7,7 +7,7 @@ import "./styles.css";
 function App() {
   return (
     <div className="App">
-      <Button buttonText={"Click me"} />
+      <Button className="btn-primary">Click Me</Button>
     </div>
   );
 }
