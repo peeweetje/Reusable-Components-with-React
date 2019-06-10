@@ -1,8 +1,11 @@
 import React from "react";
 
-const Button = ({ className, onClick, children }) => {
+const Button = ({ className, onClickButton, children }) => {
+  onClickButton = () => {
+    alert("button was clicked");
+  };
   return (
-    <button className={className} onClick={onClick}>
+    <button className={className} onClick={onClickButton}>
       {children}
     </button>
   );

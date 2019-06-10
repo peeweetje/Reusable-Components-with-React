@@ -7,7 +7,9 @@ import "./styles.css";
 function App() {
   return (
     <div className="App">
-      <Button className="btn-primary">Click Me</Button>
+      <Button className="btn-primary" onClick="onClickButton">
+        Click Me
+      </Button>
     </div>
   );
 }
