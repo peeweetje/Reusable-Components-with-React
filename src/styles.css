@@ -21,13 +21,32 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+} */
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .btn-primary {
   background-color: #008cba;
-  color: white;
+  color: #fff;
 }
 
 .btn-primary:hover {
   background-color: #008080;
+}
+
+.btn-secondary {
+  background-color: #eee;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: rgb(66, 62, 62);
 }
