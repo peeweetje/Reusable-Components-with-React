@@ -58,7 +58,7 @@ button {
 ======================*/
 
 .dropdown-menu--container {
-  height: 35px;
+  height: 40px;
   border: 1px solid #008080;
   width: 100%;
   margin: 0px;
@@ -74,8 +74,8 @@ button {
 }
 
 .dropdown-menu--arrow {
-  width: 30px;
-  height: 35px;
+  width: 35px;
+  height: 40px;
   margin: 0px;
   padding: 0px;
   display: inline-block;
@@ -90,7 +90,7 @@ button {
   display: inline-block;
   height: 100%;
   width: 100%;
-  padding: 8px 12px;
+  padding: 10px 12px;
   vertical-align: middle;
 }
 
@@ -98,15 +98,9 @@ button {
   border-bottom: 1px solid #ddd;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
-  padding: 6px;
-  padding-left: 20px;
+  padding: 12px;
+  padding-left: 10px;
   border-radius: 3px;
-}
-
-.dropdown-menu--items div.selected {
-  background-size: 16px;
-  background-repeat: no-repeat;
-  background-position: 2px 8px;
 }
 
 .dropdown-menu--items div:hover {
@@ -115,8 +109,8 @@ button {
 
 .dropdown-menu--arrow-down {
   position: absolute;
-  top: 14px;
-  left: 8px;
+  top: 15px;
+  left: 10px;
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
@@ -127,8 +121,8 @@ button {
 
 .dropdown-menu--arrow-up {
   position: absolute;
-  top: 10px;
-  left: 8px;
+  top: 12px;
+  left: 10px;
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
