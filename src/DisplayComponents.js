@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Button from "./Button";
+import DropdownMenu from "./DropdownMenu";
 
 const DisplayComponents = () => {
   const onClickPrimary = () => {
@@ -18,6 +19,15 @@ const DisplayComponents = () => {
       <Button className="btn-secondary" onClick={onClickSecondary}>
         Secondary button
       </Button>
+      <DropdownMenu
+        name="[country_id]"
+        items={[
+          { value: "ReactJS", id: 1 },
+          { value: "VueJS", id: 2 },
+          { value: "Coding", id: 3 },
+          { value: "Developer", id: 4 }
+        ]}
+      />
     </div>
   );
 };

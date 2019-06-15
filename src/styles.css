@@ -11,7 +11,9 @@
   align-items: center;
   height: 100vh;
 }
-
+/*=========================
+    BUTTON
+=========================*/
 button {
   border: none;
   border-radius: 5px;
@@ -49,4 +51,88 @@ button {
 .btn-secondary:hover {
   color: #fff;
   background-color: rgb(66, 62, 62);
+}
+
+/*=====================
+   DROPDOWN
+======================*/
+
+.dropdown-menu--container {
+  height: 35px;
+  border: 1px solid #008080;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 3px;
+}
+
+.dropdown-menu--box {
+  width: 180px;
+  position: absolute;
+  left: 50%;
+  margin-top: 100px;
+}
+
+.dropdown-menu--arrow {
+  width: 30px;
+  height: 35px;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  background: #008080;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 3px;
+}
+
+.dropdown-menu--selected-item {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 8px 12px;
+  vertical-align: middle;
+}
+
+.dropdown-menu--items div {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 6px;
+  padding-left: 20px;
+  border-radius: 3px;
+}
+
+.dropdown-menu--items div.selected {
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 2px 8px;
+}
+
+.dropdown-menu--items div:hover {
+  background-color: #eee;
+}
+
+.dropdown-menu--arrow-down {
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+
+  border-top: 10px solid #fff;
+}
+
+.dropdown-menu--arrow-up {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+
+  border-bottom: 10px solid #fff;
 }
