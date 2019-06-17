@@ -20,7 +20,6 @@ const DisplayComponents = () => {
         Secondary button
       </Button>
       <DropdownMenu
-        name="[country_id]"
         items={[
           { value: "ReactJS", id: 1 },
           { value: "VueJS", id: 2 },

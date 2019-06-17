@@ -1,18 +1,26 @@
 import React, { useState } from "react";
 
-const DropdownMenu = () => {
-  const [showItems, setshowItems] = useState(false);
+const DropdownMenu = ({ items }) => {
+  const [showItems, setShowItems] = useState(false);
+  const [itemData] = useState(items);
+  const [selectedItem, setSelectedItem] = useState(items[0]);
 
   const dropDown = () => {
-    console.log({ showItems });
-    setshowItems(!showItems);
+    setShowItems(!showItems);
+  };
+
+  const selectItem = item => {
+    setSelectedItem(item);
+    setShowItems(!showItems);
   };
 
   return (
     <div>
       <div className="dropdown-menu--box">
         <div className="dropdown-menu--container">
-          <div className="dropdown-menu--selected-item" />
+          <div className="dropdown-menu--selected-item">
+            {selectedItem.value}
+          </div>
           <div className="dropdown-menu--arrow" onClick={dropDown}>
             <span
               className={`${
@@ -23,14 +31,23 @@ const DropdownMenu = () => {
             />
           </div>
 
-          <div className="dropdown-menu--items" />
+          <div
+            className="dropdown-menu--items"
+            style={{ display: showItems ? "block" : "none" }}
+          >
+            {itemData.map(item => (
+              <div
+                key={item.id}
+                onClick={() => selectItem(item)}
+                className={selectedItem === item ? "selected" : ""}
+              >
+                {item.value}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <input
-        type="hidden"
-        // name={}
-        // value={}
-      />
+      <input type="hidden" value={selectItem.id} />
     </div>
   );
 };
