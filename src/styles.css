@@ -59,31 +59,30 @@ button {
 
 .dropdown-menu--container {
   height: 40px;
-  border: 1px solid #008080;
+  border: 1px solid #eee;
   width: 100%;
   margin: 0px;
   padding: 0px;
   border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-menu--box {
   width: 180px;
   position: absolute;
-  left: 50%;
+  left: 45%;
   margin-top: 100px;
 }
 
 .dropdown-menu--arrow {
   width: 35px;
   height: 40px;
-  margin: 0px;
-  padding: 0px;
-  display: inline-block;
-  background: #008080;
+  background: #ddd;
   position: absolute;
   right: 0;
   top: 0;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .dropdown-menu--selected-item {
@@ -109,24 +108,22 @@ button {
 
 .dropdown-menu--arrow-down {
   position: absolute;
-  top: 15px;
+  top: 17px;
   left: 10px;
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-
   border-top: 10px solid #fff;
 }
 
 .dropdown-menu--arrow-up {
   position: absolute;
-  top: 12px;
+  top: 14px;
   left: 10px;
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-
   border-bottom: 10px solid #fff;
 }
