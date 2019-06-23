@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import DropdownMenu from "./DropdownMenu";
+import ReusableInput from "./ReusableInput";
 
 const DisplayComponents = () => {
   const onClickPrimary = () => {
@@ -9,6 +10,10 @@ const DisplayComponents = () => {
 
   const onClickSecondary = () => {
     console.log("click secondary button");
+  };
+
+  const handleChange = e => {
+    this.onChange && this.onChange(e.target.value);
   };
 
   return (
@@ -27,6 +32,7 @@ const DisplayComponents = () => {
           { value: "Developer", id: 4 }
         ]}
       />
+      <ReusableInput className="input" onChange={handleChange} />
     </div>
   );
 };
