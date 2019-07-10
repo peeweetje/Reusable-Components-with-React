@@ -130,3 +130,13 @@ button {
   top: 40em;
   padding: 5px;
 }
+/*================================
+BREADCRUMB
+=================================*/
+.breadcrumb-item {
+  margin-top: 20em;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}

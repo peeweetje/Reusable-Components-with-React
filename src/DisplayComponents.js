@@ -2,6 +2,15 @@ import React from "react";
 import Button from "./Button";
 import DropdownMenu from "./DropdownMenu";
 import ReusableInput from "./ReusableInput";
+import Breadcrumb from "../src/breadcrumb/BreadCrumb";
+
+const items = [
+  { name: "Home" },
+  { name: "teacher" },
+  { name: "student" },
+  { name: "lesson" },
+  { name: "practice" }
+];
 
 const DisplayComponents = () => {
   const onClickPrimary = () => {
@@ -33,6 +42,11 @@ const DisplayComponents = () => {
         ]}
       />
       <ReusableInput className="input" onChange={handleChange} />
+      <Breadcrumb>
+        {items.map(({ name }) => (
+          <div key={name}>{name}</div>
+        ))}
+      </Breadcrumb>
     </div>
   );
 };
